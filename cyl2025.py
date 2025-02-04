@@ -35,7 +35,7 @@ def scrape_poll_results(url):
                     if "Heroes" in name:
                         titles.append("Heroes")
                     if "Tokyo" in name:
-                        titles.append("Heroes")
+                        titles.append("TMS")
                     if "Shadow Dragon" in name or "Mystery" in name:
                         titles.append("Archanea")
                     if "Valentia" in name:
@@ -117,7 +117,7 @@ def plot_dict(data, title):
     ax.set_xticks(bar_positions)
     ax.set_xticklabels(keys, rotation=45, ha='right')
     ax.set_ylabel("Votes")
-    
+
     plt.tight_layout()
     plt.show()
 
